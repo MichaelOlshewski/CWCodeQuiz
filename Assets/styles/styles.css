@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #CCFFFF;
+}
+
+body .floatRight {
+  float: right;
+}
+
+body header {
+  margin: 10px;
+}
+
+body #headerAbsolute {
+  float: right;
+}
+
+body #timeRemaining {
+  color: green;
+}
+
+body .container {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+}
+
+body .btn {
+  background-color: #2774e8;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  width: auto;
+}
+/*# sourceMappingURL=styles.css.map */
