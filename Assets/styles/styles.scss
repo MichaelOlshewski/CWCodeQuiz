@@ -5,6 +5,7 @@
 $colors: (
     light-baby-blue: #CCFFFF,
     button-blue: #2774e8,
+    dark-button-blue: darken(#2774e8, 15%)
 );
 
 @function color($color-name) {
@@ -19,31 +20,8 @@ body {
     
     .floatRight {
         float: right;
-    }
-    
-    header {
-        margin: 10px;
-    }
-    
-    #headerAbsolute {
-        float: right;
-    }
-    
-    #timeRemaining {
-        color: green;
-    }
-    
-    .container {
-        width: 100%;
-        margin: 10px;
-        padding: 5px;
-    }
-    .btn {
-        background-color: color(button-blue);
-        color: white;
-        border-radius: 5px;
-        border: none;
-        height: 25px;
-        width: auto;
+        #timeRemaining {
+            color: green;
+        }
     }
 }

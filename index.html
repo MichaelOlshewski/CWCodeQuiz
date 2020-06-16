@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--<link rel="stylesheet" href="Assets/cssReset/reset.css">-->
+    <!-- <link rel="stylesheet" href="Assets/cssReset/reset.css"> -->
     <link rel="stylesheet" href="Assets/styles/styles.css">
 </head>
 <body>
@@ -14,11 +14,16 @@
         </div>
     </header>
     <main>
-        <section class="container questions">
-            <p>How do you write a JavaScript function?</p>
+        <h1>Coding Quiz Challenge</h1>
+        <p class="description">Try to answer the following code-related questions wihtin the time limit. <br> Keep in mind that incorrect answers will penalize your score time by ten seconds.</p>
+        <button class="btn startButton">Start Quiz</button>
+        <section class="container">
+            <p id="question"></p>
         </section>
-        <section class="container answers">
-            <button class="btn">Hello World</button>
+        <section class="container">
+            <div id="answers">
+
+            </div>
         </section>
     </main>
     <script type="text/javascript" src="Assets/script.js"></script>

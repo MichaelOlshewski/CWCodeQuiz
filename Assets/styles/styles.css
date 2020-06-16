@@ -8,30 +8,7 @@ body .floatRight {
   float: right;
 }
 
-body header {
-  margin: 10px;
-}
-
-body #headerAbsolute {
-  float: right;
-}
-
-body #timeRemaining {
+body .floatRight #timeRemaining {
   color: green;
-}
-
-body .container {
-  width: 100%;
-  margin: 10px;
-  padding: 5px;
-}
-
-body .btn {
-  background-color: #2774e8;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  height: 25px;
-  width: auto;
 }
 /*# sourceMappingURL=styles.css.map */
