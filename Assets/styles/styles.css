@@ -4,11 +4,81 @@ body {
   background-color: #CCFFFF;
 }
 
-body .floatRight {
+body header {
+  margin: 10px;
+}
+
+body header .floatRight {
   float: right;
 }
 
-body .floatRight #timeRemaining {
+body header .floatRight #timeRemaining {
   color: green;
+}
+
+body .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body .questionContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body .title {
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 26px;
+}
+
+body .description {
+  text-align: center;
+  margin-top: 25px;
+}
+
+body .btn {
+  width: auto;
+  height: 25px;
+  color: white;
+  background-color: #2774e8;
+  border: none;
+  display: block;
+}
+
+body .btn:hover {
+  background-color: #1351b0;
+  font-size: 14px;
+}
+
+body .answerBtn {
+  margin-top: 10px;
+  border-radius: 5px;
+  width: auto;
+}
+
+body .startButton {
+  height: 35px;
+  width: 75px;
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .nextButton {
+  width: 75px;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-right: auto;
+  float: right;
+}
+
+body .hide {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

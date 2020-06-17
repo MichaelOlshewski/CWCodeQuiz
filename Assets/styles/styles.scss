@@ -17,11 +17,83 @@ $colors: (
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: color(light-baby-blue);
-    
-    .floatRight {
-        float: right;
-        #timeRemaining {
-            color: green;
+
+    header {
+        margin: 10px;
+        .floatRight {
+            float: right;
+            #timeRemaining {
+                color: green;
+            }
         }
     }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .questionContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+        font-size: 26px
+    }
+
+    .description {
+        text-align: center;
+        margin-top: 25px
+    }
+
+    .btn {
+        width: auto;
+        height: 25px;
+        color: white;
+        background-color: color(button-blue);
+        border: none;
+        display: block;
+    }
+
+    .btn:hover {
+        background-color: color(dark-button-blue);
+        font-size: 14px;
+    }
+
+    .answerBtn {
+        margin-top: 10px;
+        border-radius: 5px;
+        width: auto;
+    }
+
+    .startButton {
+        height: 35px;
+        width: 75px;
+        border-radius: 10px;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nextButton {
+        width: 75px;
+        height: 35px;
+        border-radius: 10px;
+        margin-top: 60px;
+        margin-right: auto;
+        float: right;
+    }
+
+    .hide {
+        display: none;
+    }
+    
+
+
 }

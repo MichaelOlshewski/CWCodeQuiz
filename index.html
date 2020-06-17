@@ -10,19 +10,29 @@
 <body>
     <header>
         <div>
-            <h4>View High Scores <span class="floatRight">Time: <span id="timeRemaining">X</span></span></h4>
+            <h4>View High Scores <span class="floatRight hide">Time: <span id="timeRemaining">X</span></span></h4>
         </div>
     </header>
     <main>
-        <h1>Coding Quiz Challenge</h1>
-        <p class="description">Try to answer the following code-related questions wihtin the time limit. <br> Keep in mind that incorrect answers will penalize your score time by ten seconds.</p>
-        <button class="btn startButton">Start Quiz</button>
+        <div id="mainHeader" class="">
+            <h1 class="title">Coding Quiz Challenge</h1>
+            <p class="description">Try to answer the following code-related questions wihtin the time limit. <br> Keep in mind that incorrect answers will penalize your score time by ten seconds.</p>
+        </div>
         <section class="container">
-            <p id="question"></p>
-        </section>
-        <section class="container">
-            <div id="answers">
-
+            <div class="questionContainer hide">
+                <div id="question">Question</div>
+                <div id="answerBtns">
+                    <button class="answerBtn btn">Answer 1</button>
+                    <button class="answerBtn btn">Answer 2</button>
+                    <button class="answerBtn btn">Answer 3</button>
+                    <button class="answerBtn btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <p>
+                    <button id="start-btn" class="startButton btn">Start</button>
+                    <button id="next-btn" class="nextButton btn hide">Next</button>
+                </p>
             </div>
         </section>
     </main>
