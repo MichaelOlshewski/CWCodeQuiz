@@ -10,7 +10,7 @@
 <body>
     <header>
         <div>
-            <h4>View High Scores <span class="floatRight hide">Time: <span id="timeRemaining">X</span></span></h4>
+            <h4>View High Scores <span id="timerSpan" class="floatRight hide">Time: <span id="timeRemaining">X</span></span></h4>
         </div>
     </header>
     <main>
@@ -19,7 +19,7 @@
             <p class="description">Try to answer the following code-related questions wihtin the time limit. <br> Keep in mind that incorrect answers will penalize your score time by ten seconds.</p>
         </div>
         <section class="container">
-            <div class="questionContainer hide">
+            <div id="questionContainer" class="hide">
                 <div id="question">Question</div>
                 <div id="answerBtns">
                     <button class="answerBtn btn">Answer 1</button>
@@ -28,10 +28,10 @@
                     <button class="answerBtn btn">Answer 4</button>
                 </div>
             </div>
-            <div class="controls">
+            <div id="controls">
                 <p>
-                    <button id="start-btn" class="startButton btn">Start</button>
-                    <button id="next-btn" class="nextButton btn hide">Next</button>
+                    <button id="start-btn" class="btn">Start</button>
+                    <button id="next-btn" class="btn hide">Next</button>
                 </p>
             </div>
         </section>
