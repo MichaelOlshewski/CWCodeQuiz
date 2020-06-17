@@ -5,7 +5,9 @@
 $colors: (
     light-baby-blue: #CCFFFF,
     button-blue: #2774e8,
-    dark-button-blue: darken(#2774e8, 15%)
+    dark-button-blue: darken(#2774e8, 15%),
+    lighten-green: lighten(green, 15%),
+    lighten-red: lighten(red, 15%),
 );
 
 @function color($color-name) {
@@ -33,8 +35,7 @@ body {
         margin: 0 auto;
     }
 
-    #questionContainer {
-        width: 90%;
+    #quiz {
         margin: 0 auto;
     }
 
@@ -94,6 +95,57 @@ body {
         display: none;
     }
     
+    #isCorrect {
+        background-color: color(lighten-green);
+        color: white;
+        padding: 5px;
+        margin: 10px 0;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+    }
 
+    #isIncorrect {
+        background-color: color(lighten-red);
+        color: white;
+        padding: 5px;
+        margin: 10px 0;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+    }
 
+    #question {
+        text-align: center;
+    }
+
+    #finalDiv {
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #finalDiv p {
+        margin-top: 5px;
+    }
+
+    #finalDiv h3 {
+        text-align: center;
+    }
+
+    #finalDiv input#initialInput {
+        margin-top: 15px;
+        border-radius: 5px;
+        border: 1px solid color(dark-button-blue);
+        height: 25px;
+        width: auto;
+    }
+
+    #returnStart {
+        margin: 15px auto;
+    }
 }

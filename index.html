@@ -10,29 +10,38 @@
 <body>
     <header>
         <div>
-            <h4>View High Scores <span id="timerSpan" class="floatRight hide">Time: <span id="timeRemaining">X</span></span></h4>
+            <h4 class="">View High Scores <span id="timerSpan" class="floatRight hide">Time: <span id="timeRemaining">100</span></span></h4>
         </div>
     </header>
     <main>
         <div id="mainHeader" class="">
             <h1 class="title">Coding Quiz Challenge</h1>
-            <p class="description">Try to answer the following code-related questions wihtin the time limit. <br> Keep in mind that incorrect answers will penalize your score time by ten seconds.</p>
+            <p class="description">Try to answer the following code-related questions within the time limit. <br> Keep in mind that incorrect answers will penalize your score time by ten seconds.</p>
         </div>
         <section class="container">
-            <div id="questionContainer" class="hide">
-                <div id="question">Question</div>
+            <div id="quiz" class="hide">
+                <div id="question"><p>Question</p></div>
                 <div id="answerBtns">
-                    <button class="answerBtn btn">Answer 1</button>
-                    <button class="answerBtn btn">Answer 2</button>
-                    <button class="answerBtn btn">Answer 3</button>
-                    <button class="answerBtn btn">Answer 4</button>
+                    <button id="choiceA" class="answerBtn btn" onclick="checkAnswer('A')"></button>
+                    <button id="choiceB" class="answerBtn btn" onclick="checkAnswer('B')"></button>
+                    <button id="choiceC" class="answerBtn btn" onclick="checkAnswer('C')"></button>
+                    <button id="choiceD" class="answerBtn btn" onclick="checkAnswer('D')"></button>
                 </div>
+                <div id="isCorrect" class="hide">Correct!</div>
+                <div id="isIncorrect" class="hide">Incorrect!</div>
             </div>
             <div id="controls">
                 <p>
                     <button id="start-btn" class="btn">Start</button>
                     <button id="next-btn" class="btn hide">Next</button>
                 </p>
+            </div>
+            <div id="finalDiv" class="hide">
+                <h3>All Done!</h3>
+                <p>Your final score is: <span id="finalScore"></span></p>
+                Enter Initials: <input id="initialInput" type="text">
+                <hr>
+                <button id="returnStart" class="btn answerBtn">Return To Start</button>
             </div>
         </section>
     </main>
