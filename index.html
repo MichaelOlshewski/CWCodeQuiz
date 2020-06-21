@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <div>
-            <h4 class="">View High Scores <span id="timerSpan" class="floatRight hide">Time: <span id="timeRemaining">101</span></span></h4>
+        <div id="header">
+            <h4 class=""><a href="#" id="viewHighScores">View High Scores</a>  <span id="timerSpan" class="floatRight hide">Time: <span id="timeRemaining"></span></span></h4>
         </div>
     </header>
     <main>
@@ -38,10 +38,29 @@
             </div>
             <div id="finalDiv" class="hide">
                 <h3>All Done!</h3>
-                <p>Your final score is: <span id="finalScore"></span></p>
-                Enter Initials: <input id="initialInput" type="text">
+                Your final score is: <span id="finalScore"></span>
+                <br>
+                Initials: <input id="initialInput" type="text" />
+                <button id="save" class="saveBtn answerBtn btn">Save</button>
+                <div id="saved" class="hide">High Score Saved!</div>
+                <div id="error" class="hide">You must enter your initials to save your score!</div>
                 <hr>
                 <button id="returnStart" class="btn answerBtn">Return To Start</button>
+            </div>
+            <div class="hide" id="showHighScores">
+                <h2>High Scores</h2>
+                <hr>
+                <div>
+                    <table id="highScores">
+                        <tr>
+                            <th style="padding-right: 20px;">Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <button id="goToStart" class="btn answerBtn">Return to Start</button>
+                <button id="clearStorage" class="btn answerBtn">Clear Scores</button>
             </div>
         </section>
     </main>

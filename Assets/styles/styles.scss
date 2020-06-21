@@ -14,6 +14,22 @@ $colors: (
     @return map-get($colors, $color-name)
 };
 
+$desktop: 661px;
+$mobile: 660px;
+
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
 // CSS Starts Here
 
 body {
@@ -28,11 +44,25 @@ body {
                 color: green;
             }
         }
+
+        a, a:visited, a:active {
+            text-decoration: none;
+            color: black;
+
+        }
+    }
+
+    .inline {
+        display: inline-block;
     }
 
     .container {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .floatLeft {
+        float: left;
     }
 
     #quiz {
@@ -60,6 +90,14 @@ body {
         background-color: color(button-blue);
         border: none;
         display: block;
+    }
+
+    form {
+        position: relative;
+    }
+
+    .saveBtn {
+        position: relative;
     }
 
     .btn:hover {
@@ -119,14 +157,39 @@ body {
         border-radius: 10px;
     }
 
+    #saved {
+        background-color: color(lighten-green);
+        color: white;
+        padding: 5px 0;
+        margin: 10px 0;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #error {
+        background-color: color(lighten-red);
+        color: white;
+        padding: 5px 0;
+        margin: 10px auto;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+    }
+
     #question {
         text-align: center;
     }
 
     #finalDiv {
-        margin-top: 25%;
+        margin-top: auto;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 
     #finalDiv p {
@@ -147,5 +210,51 @@ body {
 
     #returnStart {
         margin: 15px auto;
+        text-align: center;
+        margin-left: auto;
+        height: 30px;
+        width: 130px;
+    }
+    #save {
+        margin-top: 15px;
+        display: inline-block;
+        height: 30px;
+        width: 60px;
+    }
+
+    #showHighScores {
+        text-align: center;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    #clearStorage {
+        margin: 5px auto;
+    }
+
+    #goToStart {
+        margin: 15px auto;
+        text-align: center;
+        margin-left: auto;
+        height: 30px;
+        width: 130px;
+    }
+
+    #highScores {
+        margin: 10px auto;
+    }
+    th, td {
+        padding-right: 20px;
+    }
+
+    @include desktop {
+        .container {
+            width: 40%;
+        }
+
+        #header {
+            width: 60%;
+            margin: 0 auto;
+        }
     }
 }
